@@ -14,8 +14,7 @@ if (isset($_POST['sub'])) {
 	$count=$_POST['count'];
 	for ($i=0; $i < $count; $i++) {  
 		$date=date("d-m-y");
-        $attend=$_POST['attendanc'];
-		$que="insert into student_attendance(course_code,subject_code,semester,student_id,attendance,attendance_date)values('".$_POST['course_code'][$i]."','".$_POST['subject_code'][$i]."','".$_POST['semester'][$i]."','".$_POST['roll_no'][$i].",'$attend',','$date')";
+		$que="insert into student_attendance(course_code,subject_code,semester,student_id,attendance,attendance_date)values('".$_POST['course_code'][$i]."','".$_POST['subject_code'][$i]."','".$_POST['semester'][$i]."','".$_POST['roll_no'][$i].",'".$_POST['attendance'][$i]."','$date')";
 	$run=mysqli_query($con,$que);
 	if ($run) {
 			echo "Insert Successfully";
@@ -158,8 +157,8 @@ if (isset($_POST['sub'])) {
                                     </td>
                                     <?php 	}
 											?>
-                                    <td>Present<input type="checkbox" name="attendanc" value="1">Absent<input
-                                            type="checkbox" name="attendanc" value="0"></td>
+                                    <td>Present<input type="checkbox" name="attendance[]" value="1">Absent<input
+                                            type="checkbox" name="attendance[]" value="0"></td>
 
                                     <input type="hidden" name="count" value="<?php echo $count ?>">
                                 </tr>
