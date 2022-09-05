@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* sidebar area goes here */
+
+.sidebar {
+	left: 250px;
+	width: 250px;
+	height: 100%;
+	margin-left: -250px;
+	background: #37474F;
+	transition: all 0.5s ease;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+.sidebar-header {
+	background-color: #263238;
+	font-size: 20px;
+	line-height: 52px;
+	text-align: center;
+
+}
+
+.sidebar-header a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+
+
+.sidebar ul a {
+	background: none;
+	border-bottom: 1px solid #455A64;
+	color: #CFD8DC;
+	font-size: 14px;
+	padding: 16px 24px;
+	line-height: 24px;
+}
+
+.sidebar ul a:hover {
+	background: none;
+	color: #ECEFF1;
+}
+
+.sidebar ul a i {
+	margin-right: 16px;
+}
+
+/* sidebar area go to end here */
+
+/* all page style goes here */
+
+.button-show {
+	display: none;
+}
+
+.admin-dashboard {
+	margin-top: 1px !important;
+	background: #2c3e50 !important;
+	border-radius: 3px;
+}
+
+/* all page style go to end here */
+
+/* table style goes here */
+
+
+table{
+	background-color: #fefefe;
+	 border-collapse: collapse;
+	 border-radius: 10px;
+	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+	 overflow: hidden;
+	 margin-left: 3px;
+}
+
+.table-elements tr,
+td,
+th {
+	
+	font-size: 13px;
+	padding-left: 10px !important;
+	font-family: "Poppins", sans-serif;
+	color: #141a4e;
+	min-height: 100vh;
+	align-items: center;
+	 justify-content: center;
+}
+
+.table-elements tr{
+	 border-bottom: 1px solid #edeef2;
+	 padding: 0 1.5rem;
+}
+
+.table-elements th{
+	background-color: #e1e8f2;
+}
+
+.table-one {
+	background: #e6b794 ;
+	margin-left: 3px;
+	border-radius: 10px;
+}
+
+.table-two {
+	background: #51b5e4;
+	margin-left: 3px;
+	border-radius: 10px;
+}
+
+.table-three {
+	background: #2c3e50 !important;
+	margin-left: 3px;
+	border-radius: 10px;
+}
+
+.table-four {
+	background: #e70db8b6;
+	margin-left: 3px;
+	border-radius: 10px;
+}
+
+.table-five {
+	background: #3e9225fd;
+	margin-left: 3px;
+	border-radius: 10px;
+}
+
+.table-tr-head {
+	height: 45px !important;
+	padding: 10px !important;
+	margin-top: 5px !important;
+}
+
+.tr-height {
+	padding: 100px !important;
+}
